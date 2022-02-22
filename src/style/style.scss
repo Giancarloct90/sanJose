@@ -1,0 +1,63 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$heade3: 3.3rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+
+@font-face {
+    font-family: "menu-regular";
+    src: url("../asset/fonts/Staatliches-Regular.ttf");
+}
+
+@font-face {
+    font-family: "text-content";
+    src: url("../asset/fonts/Overpass-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "text-title";
+    src: url("../asset/fonts/SignikaNegative-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "text-hero";
+    src: url("../asset/fonts/Vidaloka-Regular.ttf");
+}
+
+@import "global";
+@import "_hero.scss";
+@import "servicios";
+@import "proyectos";
+@import "footer";
+@import "breakPoints";
+
+// ANIMATIONS
+
+
+
+
+
+@keyframes load2 {
+    from {
+        opacity: 0;
+        transform: translateY(6%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+        // transform: ;
+        // display: inline-block;
+    }
+}
+
+@keyframes heroShake {
+    from {
+        transform: rotateZ(-5deg);
+    }
+
+    to {
+        transform: rotateZ(5deg);
+    }
+}

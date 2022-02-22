@@ -1,0 +1,153 @@
+.servicios {
+    position: relative;
+    height: max-content;
+    padding: 5rem 0rem;
+    overflow: hidden;
+    // background-color: bisque;
+}
+
+.serviciosTitulo {
+    width: 100%;
+    min-height: 8vh;
+    // padding: 1rem;
+    // text-align: center;
+    display: flex;
+    place-content: center;
+    padding: 3rem;
+    background: linear-gradient(80deg, #08B7FE, #4FE2F6);
+
+    h2 {
+        color: white;
+        font-family: "text-title";
+        font-size: 4.5rem;
+    }
+}
+
+.serviciosContent {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 8rem;
+    // background-color: aquamarine;
+}
+
+
+.serviciosContentContent {
+    // background-color: #08B7FE;
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 0rem;
+    width: 100%;
+    justify-content: space-evenly;
+    // background-color: #08B7FE;
+}
+
+.serviciosContentImage,
+.serviciosContentImageAW {
+    width: 60rem;
+    // background-color: beige;
+
+    img {
+        width: 50rem;
+        object-fit: cover;
+    }
+}
+
+.serviciosContentItem {
+    display: flex;
+    // background-color: bisque;
+    width: 60rem;
+    flex: 2 0 60rem;
+    // justify-content: center;
+
+    img {
+        width: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.9rem;
+        font-family: "text-content";
+        font-weight: 500;
+        // font-size: 4.5rem;
+    }
+}
+
+.serviciosContentTitulo {
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+
+    h3 {
+        font-family: "text-title";
+        // font-size: 4.5rem;
+    }
+}
+
+.divWaves {
+    margin-top: 40rem;
+}
+
+.wave1 {
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1000;
+    // display: none;
+
+    img {
+        width: 100%;
+
+    }
+}
+
+.wave2 {
+    position: absolute;
+    bottom: -0.5rem;
+    z-index: 999;
+    width: 100%;
+
+    img {
+        width: 100%;
+
+    }
+
+}
+
+.wave3 {
+    position: absolute;
+    bottom: -2.5rem;
+    z-index: 998;
+    width: 100%;
+
+    img {
+        width: 100%;
+
+    }
+
+}
+
+.serviciosContentImage,
+.contentAppWeb {
+    transform: translateX(-60%);
+    opacity: 0;
+    transition: all 0.6s ease-in-out 0.0001s;
+    //  0.0001s
+}
+
+.contentPaginaWeb,
+.contentOtros,
+.serviciosContentImageAW {
+    transform: translateX(60%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.fadeRtoL {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+.fadeltoR {
+    transform: translateX(0%);
+    opacity: 1;
+}

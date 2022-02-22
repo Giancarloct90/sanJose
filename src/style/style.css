@@ -1,0 +1,671 @@
+@font-face {
+  font-family: "menu-regular";
+  src: url("../asset/fonts/Staatliches-Regular.ttf");
+}
+@font-face {
+  font-family: "text-content";
+  src: url("../asset/fonts/Overpass-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "text-title";
+  src: url("../asset/fonts/SignikaNegative-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "text-hero";
+  src: url("../asset/fonts/Vidaloka-Regular.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.3rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.divNav {
+  min-height: 15vh;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+}
+.logoDiv img {
+  width: 15rem;
+}
+
+.navLinks {
+  z-index: 999;
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.navLinks li::after {
+  content: "";
+  display: block;
+  width: auto;
+  background-color: white;
+  height: 0.5rem;
+  margin: 0px;
+  padding: 0px;
+  transition: all 0.3s ease;
+}
+.navLinks li:hover::after {
+  background-color: black;
+}
+.navLinks li a {
+  font-family: "menu-regular";
+  font-size: 3.5rem;
+  font-weight: 50;
+}
+
+.hero {
+  min-height: 85vh;
+}
+
+.imgVectorDiv img {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  object-fit: cover;
+}
+
+.imgDevGuyDiv {
+  width: 50rem;
+}
+.imgDevGuyDiv img {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  right: 0px;
+}
+
+.heroContent {
+  height: 85vh;
+  width: 91.7%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  animation: load2 2s ease-in-out;
+}
+
+.divTextContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.heroText {
+  font-family: "text-hero";
+  font-size: 6.7rem;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-family: "text-content";
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.divBurger {
+  display: none;
+}
+
+.divBtn {
+  width: 100%;
+  background-color: #4FE2F6;
+}
+
+.btnHero2 {
+  border: solid;
+  background-color: white;
+  width: 30rem;
+  height: 5.8rem;
+  padding: 2rem 0rem;
+  color: black;
+  cursor: pointer;
+  margin-top: 5rem;
+  transition: all 0.3s ease-in, background-image 0.2s ease;
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 1.5rem 0rem;
+  border-image-slice: 1;
+  border-width: 0.5rem;
+  border-image-source: linear-gradient(to left, #4FE2F6, #F05FF3);
+}
+.btnHero2:hover {
+  background-image: linear-gradient(to left, #4FE2F6, #F05FF3);
+  color: white;
+}
+
+.servicios {
+  position: relative;
+  height: max-content;
+  padding: 5rem 0rem;
+  overflow: hidden;
+}
+
+.serviciosTitulo {
+  width: 100%;
+  min-height: 8vh;
+  display: flex;
+  place-content: center;
+  padding: 3rem;
+  background: linear-gradient(80deg, #08B7FE, #4FE2F6);
+}
+.serviciosTitulo h2 {
+  color: white;
+  font-family: "text-title";
+  font-size: 4.5rem;
+}
+
+.serviciosContent {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 8rem;
+}
+
+.serviciosContentContent {
+  display: flex;
+  gap: 0rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.serviciosContentImage,
+.serviciosContentImageAW {
+  width: 60rem;
+}
+.serviciosContentImage img,
+.serviciosContentImageAW img {
+  width: 50rem;
+  object-fit: cover;
+}
+
+.serviciosContentItem {
+  display: flex;
+  width: 60rem;
+  flex: 2 0 60rem;
+}
+.serviciosContentItem img {
+  width: 3.5rem;
+}
+.serviciosContentItem h3 {
+  font-size: 2.9rem;
+  font-family: "text-content";
+  font-weight: 500;
+}
+
+.serviciosContentTitulo {
+  width: 100%;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+.serviciosContentTitulo h3 {
+  font-family: "text-title";
+}
+
+.divWaves {
+  margin-top: 40rem;
+}
+
+.wave1 {
+  position: absolute;
+  bottom: -1rem;
+  z-index: 1000;
+}
+.wave1 img {
+  width: 100%;
+}
+
+.wave2 {
+  position: absolute;
+  bottom: -0.5rem;
+  z-index: 999;
+  width: 100%;
+}
+.wave2 img {
+  width: 100%;
+}
+
+.wave3 {
+  position: absolute;
+  bottom: -2.5rem;
+  z-index: 998;
+  width: 100%;
+}
+.wave3 img {
+  width: 100%;
+}
+
+.serviciosContentImage,
+.contentAppWeb {
+  transform: translateX(-60%);
+  opacity: 0;
+  transition: all 0.6s ease-in-out 0.0001s;
+}
+
+.contentPaginaWeb,
+.contentOtros,
+.serviciosContentImageAW {
+  transform: translateX(60%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.fadeRtoL {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.fadeltoR {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.proyectos {
+  background-color: #00B2FF;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 10rem;
+}
+
+.proyectosTitulo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.proyectosTitulo h2 {
+  padding-top: 11rem;
+  font-family: "text-title";
+  font-size: 5rem;
+  color: white;
+}
+
+.proyectosContent {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  transition: all 0.7s ease-in;
+}
+
+.project {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.project:hover {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4), 0px 30px 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2rem);
+}
+
+.divImgProject {
+  width: 100%;
+}
+.divImgProject img {
+  width: 100%;
+  object-fit: fill;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.divContentProject {
+  margin-top: 2rem;
+  padding: 0rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.divContentProject h1 {
+  font-family: "text-title";
+}
+
+.btnProject {
+  margin-top: 3rem;
+  border: none;
+  background-color: #258D8A;
+  color: white;
+  border-radius: 0.9rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.proyectosContent {
+  opacity: 0;
+}
+
+.proyectosContentReveal {
+  opacity: 1;
+}
+
+.footer {
+  background-color: #27394E;
+  height: auto;
+  padding: 10rem 0rem;
+}
+
+.divFooterContent {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0rem;
+}
+
+.divForm {
+  border-radius: 1rem;
+  height: 40rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: white;
+  padding: 0rem 3rem;
+}
+
+.divTitleForm {
+  margin-bottom: 1rem;
+}
+.divTitleForm h2 {
+  font-size: 3rem;
+}
+
+.divNombre,
+.divNumero,
+.divMesaje {
+  display: flex;
+  flex-direction: column;
+}
+.divNombre input,
+.divNumero input,
+.divMesaje input {
+  padding: 0rem 1rem;
+}
+.divNombre label,
+.divNumero label,
+.divMesaje label {
+  font-size: 2.5rem;
+}
+
+.btnForm {
+  border: none;
+  background-color: #F1727A;
+  height: 4rem;
+  color: white;
+  transition: all 0.7s ease;
+}
+.btnForm:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 0.4rem #F1727A solid;
+  color: black;
+}
+
+.divMapSite {
+  border-radius: 1rem;
+  height: 40rem;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.divMapSite li a {
+  color: white;
+}
+
+.divLogoSocialNetwork {
+  border-radius: 1rem;
+  height: 40rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
+}
+
+.divImgLogoFooter img {
+  width: 20rem;
+}
+
+.divEmailFooter li {
+  margin: 2rem 0rem;
+  display: flex;
+  gap: 2rem;
+  color: white;
+  font-weight: 900;
+}
+.divEmailFooter li img {
+  width: 2.6rem;
+  height: 3rem;
+}
+
+.divSocialNetworkFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.divSocialNetworkFooter img {
+  width: 4rem;
+}
+
+.border::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  transition: all 0.5s ease-in;
+  background: white;
+}
+
+.border:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 744px) {
+  html {
+    font-size: 42%;
+  }
+
+  .divBurger {
+    display: block;
+  }
+
+  .burgerLine1,
+.burgerLine3,
+.burgerLine2 {
+    background-color: #a3ceff;
+    height: 0.9rem;
+    width: 7.3rem;
+    margin: 1.2rem 0rem;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 10vh;
+    right: 0px;
+    min-height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22rem;
+    place-content: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: all 1s ease;
+  }
+
+  .activeNavLinks {
+    transform: translateX(0%);
+  }
+
+  .header2 {
+    box-shadow: 0rem 0.5rem 2rem 0.6rem rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+  }
+
+  .divNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 3.5rem;
+    min-height: 10vh;
+  }
+
+  .imgVectorDiv,
+.imgDevGuyDiv {
+    display: none;
+  }
+
+  .heroContent {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .divTextContent {
+    background-color: #00B2FF;
+    padding: 10rem 3rem;
+    height: auto;
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+  }
+  .divTextContent .heroText {
+    color: white;
+    font-size: 5.8rem;
+  }
+  .divTextContent h1 {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+
+  .divBtnHero {
+    width: 100%;
+    text-align: center;
+    height: 20rem;
+  }
+
+  .btnHero2 {
+    height: 8rem;
+    width: 100%;
+  }
+
+  .diviPaginaWeb {
+    display: flex;
+    flex-direction: column;
+    background-color: #00B2FF;
+  }
+
+  .serviciosContentContent {
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .serviciosContentItem {
+    width: 55rem;
+  }
+
+  .proyectosContent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divWaves {
+    margin-top: 13rem;
+  }
+
+  .divFooterContent {
+    gap: 15rem;
+  }
+
+  .divMapSite {
+    display: none;
+  }
+}
+@keyframes load2 {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes heroShake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
