@@ -14,6 +14,14 @@
   font-family: "text-hero";
   src: url("../asset/fonts/Vidaloka-Regular.ttf");
 }
+.hero,
+.servicios,
+.proyectos,
+.footer {
+  position: relative;
+  z-index: -5;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -79,7 +87,6 @@ li {
 }
 
 .navLinks {
-  z-index: 999;
   width: 70%;
   display: flex;
   gap: 1rem;
@@ -224,6 +231,7 @@ h1 {
 .serviciosContentImage,
 .serviciosContentImageAW {
   width: 60rem;
+  display: flex;
 }
 .serviciosContentImage img,
 .serviciosContentImageAW img {
@@ -231,10 +239,15 @@ h1 {
   object-fit: cover;
 }
 
+.contentOtros {
+  display: flex;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .serviciosContentItem {
   display: flex;
-  width: 60rem;
-  flex: 2 0 60rem;
 }
 .serviciosContentItem img {
   width: 3.5rem;
@@ -423,6 +436,17 @@ h1 {
   padding: 0rem 3rem;
 }
 
+.form1 {
+  border-radius: 1rem;
+  height: 40rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: white;
+  padding: 0rem 3rem;
+}
+
 .divTitleForm {
   margin-bottom: 1rem;
 }
@@ -537,17 +561,31 @@ h1 {
 .burgerLine3,
 .burgerLine2 {
     background-color: #a3ceff;
-    height: 0.9rem;
-    width: 7.3rem;
+    height: 0.8rem;
+    width: 7rem;
     margin: 1.2rem 0rem;
+    transition: all 0.5s ease-in;
+  }
+
+  .divNav {
+    background-color: #00B2FF;
+  }
+
+  .logoDiv {
+    background-color: aqua;
+    height: 7rem;
+    width: 14rem;
+  }
+  .logoDiv img {
+    width: 17rem;
   }
 
   .navLinks {
     position: fixed;
-    top: 10vh;
+    top: 9vh;
     right: 0px;
-    min-height: 90vh;
-    background-color: white;
+    min-height: 91vh;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -557,6 +595,7 @@ h1 {
     width: 50%;
     transform: translateX(100%);
     transition: all 1s ease;
+    z-index: -4;
   }
 
   .activeNavLinks {
@@ -565,7 +604,6 @@ h1 {
 
   .header2 {
     box-shadow: 0rem 0.5rem 2rem 0.6rem rgba(0, 0, 0, 0.2);
-    z-index: 2000;
   }
 
   .divNav {
@@ -573,7 +611,19 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 0rem 3.5rem;
-    min-height: 10vh;
+    min-height: 9vh;
+  }
+
+  .toogle .burgerLine1 {
+    transform: rotate(45deg) translate(0.8rem, 0.6rem);
+  }
+
+  .toogle .burgerLine2 {
+    opacity: 0;
+  }
+
+  .toogle .burgerLine3 {
+    transform: rotate(-45deg) translate(0.8rem, -0.6rem);
   }
 
   .imgVectorDiv,

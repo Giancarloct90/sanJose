@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./asset/img/logo2.jpg">
   <title>G-Dev</title>
 
   <link rel="stylesheet" href="./style/style.css" />
@@ -13,7 +15,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <header class="header2">
+  <section class="header2">
     <nav class="divNav">
       <div class="logoDiv">
         <img src="./asset/img/logo.svg" alt="" id="logo">
@@ -32,7 +34,7 @@
         <div class="burgerLine2"></div>
       </div>
     </nav>
-  </header>
+  </section>
 
   <!-- HERO SECTION -->
   <section class="hero" id="hero">
@@ -42,8 +44,7 @@
         <h1>Nosotros hacemos Páginas Web responsivas y
           profesionales,
           <br> ponemos tu negocio o empresa en el internet.</h1>
-        <!-- <a class="btnHero border-gradient border-gradient-purple" href="">CONTACTENOS</a> -->
-        <!-- <a class="btnHero"></a> -->
+
       </div>
       <div class="divBtnHero">
         <a href="#footer"><button class="btnHero2">CONTACTENOS</button> </a>
@@ -174,9 +175,6 @@
           </div>
 
         </div>
-
-
-
       </div>
 
     </div>
@@ -276,22 +274,25 @@
         <div class="divTitleForm">
           <h2>CONTACTENOS</h2>
         </div>
-        <div class="divNombre">
-          <label for="nombre">NOMBRE</label>
-          <input type="text" name="nombre" id="nombre" autocomplete="off">
-        </div>
+        <form action="https://formspree.io/f/mnqwdrpd" class="form1" method="POST">
 
-        <div class="divNumero">
-          <label for="numero">TELEFONO</label>
-          <input type="text" name="numero" id="numero" autocomplete="off">
-        </div>
+          <div class="divNombre">
+            <label for="nombre">NOMBRE</label>
+            <input type="text" name="nombre" id="nombre" autocomplete="off">
+          </div>
 
-        <div class="divMesaje">
-          <label for="mensaje">MENSAJE</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
-        </div>
+          <div class="divNumero">
+            <label for="numero">TELEFONO</label>
+            <input type="text" name="numero" id="numero" autocomplete="off">
+          </div>
 
-        <button class="btnForm">ENVIAR</button>
+          <div class="divMesaje">
+            <label for="mensaje">MENSAJE</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+          </div>
+
+          <button type="submit" class="btnForm">ENVIAR</button>
+        </form>
 
       </div>
 

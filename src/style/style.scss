@@ -25,6 +25,14 @@ $gradient: linear-gradient(left, #38d39f, #38a4d3);
     src: url("../asset/fonts/Vidaloka-Regular.ttf");
 }
 
+.hero,
+.servicios,
+.proyectos,
+.footer {
+    position: relative;
+    z-index: -5
+}
+
 @import "global";
 @import "_hero.scss";
 @import "servicios";
@@ -33,10 +41,6 @@ $gradient: linear-gradient(left, #38d39f, #38a4d3);
 @import "breakPoints";
 
 // ANIMATIONS
-
-
-
-
 
 @keyframes load2 {
     from {

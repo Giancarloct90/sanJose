@@ -70,4 +70,5 @@ const navLinks = document.getElementById('navLinks');
 
 divBurger.addEventListener('click', () => {
     navLinks.classList.toggle('activeNavLinks');
+    divBurger.classList.toggle('toogle');
 });
