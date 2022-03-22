@@ -12,11 +12,9 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 0rem;
-    // background-color: aqua;
 }
 
 .divForm {
-    // background-color: white;
     border-radius: 1rem;
     height: 40rem;
     width: 45rem;
@@ -28,7 +26,6 @@
 }
 
 .form1 {
-    // background-color: white;
     border-radius: 1rem;
     height: 40rem;
     width: 45rem;
@@ -42,6 +39,7 @@
 .divTitleForm {
     h2 {
         font-size: 3rem;
+
     }
 
     margin-bottom: 1rem;
@@ -64,7 +62,6 @@
 
 .btnForm {
     border: none;
-    // border-radius:;
     background-color: #F1727A;
     height: 4rem;
     color: white;
@@ -79,7 +76,6 @@
 }
 
 .divMapSite {
-    // background-color: white;
     border-radius: 1rem;
     height: 40rem;
     width: 33rem;
@@ -97,7 +93,6 @@
 }
 
 .divLogoSocialNetwork {
-    // background-color: white;
     border-radius: 1rem;
     height: 40rem;
     width: 45rem;
@@ -115,7 +110,6 @@
 }
 
 .divEmailFooter {
-    // background-color: #27394E;
 
     li {
         margin: 2rem 0rem;
@@ -133,8 +127,6 @@
 }
 
 .divSocialNetworkFooter {
-    // background-color: #27394E;
-    // margin: 2rem 0rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -150,7 +142,6 @@
     margin: auto;
     height: 3px;
     width: 0px;
-    // background: transparent;
     transition: all 0.5s ease-in;
     background: white;
 }

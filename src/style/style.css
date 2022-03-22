@@ -14,14 +14,6 @@
   font-family: "text-hero";
   src: url("../asset/fonts/Vidaloka-Regular.ttf");
 }
-.hero,
-.servicios,
-.proyectos,
-.footer {
-  position: relative;
-  z-index: -5;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -168,29 +160,30 @@ h1 {
 
 .divBtn {
   width: 100%;
-  background-color: #4FE2F6;
+  background-color: #4fe2f6;
 }
 
 .btnHero2 {
   border: solid;
   background-color: white;
   width: 30rem;
-  height: 5.8rem;
+  height: auto;
   padding: 2rem 0rem;
   color: black;
   cursor: pointer;
   margin-top: 5rem;
-  transition: all 0.3s ease-in, background-image 0.2s ease;
+  transition: color 0.3s ease-in, background-image 0.2s ease;
   font-size: 2.3rem;
   font-weight: 900;
+  letter-spacing: 0.2rem;
   text-align: center;
   padding: 1.5rem 0rem;
   border-image-slice: 1;
   border-width: 0.5rem;
-  border-image-source: linear-gradient(to left, #4FE2F6, #F05FF3);
+  border-image-source: linear-gradient(to left, #4fe2f6, #f05ff3);
 }
 .btnHero2:hover {
-  background-image: linear-gradient(to left, #4FE2F6, #F05FF3);
+  background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
   color: white;
 }
 
@@ -218,7 +211,6 @@ h1 {
 .serviciosContent {
   width: 90%;
   margin: auto;
-  padding-bottom: 8rem;
 }
 
 .serviciosContentContent {
@@ -269,7 +261,7 @@ h1 {
 }
 
 .divWaves {
-  margin-top: 40rem;
+  margin-top: 30rem;
 }
 
 .wave1 {
@@ -337,10 +329,10 @@ h1 {
 .proyectosTitulo {
   width: 100%;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 .proyectosTitulo h2 {
-  padding-top: 11rem;
+  padding-top: 7rem;
   font-family: "text-title";
   font-size: 5rem;
   color: white;
@@ -553,6 +545,18 @@ h1 {
     font-size: 42%;
   }
 
+  .hero,
+.servicios,
+.proyectos,
+.footer {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header2 {
+    z-index: 3;
+  }
+
   .divBurger {
     display: block;
   }
@@ -560,24 +564,27 @@ h1 {
   .burgerLine1,
 .burgerLine3,
 .burgerLine2 {
-    background-color: #a3ceff;
-    height: 0.8rem;
-    width: 7rem;
+    background-color: #27394e;
+    height: 0.6rem;
+    width: 6rem;
     margin: 1.2rem 0rem;
     transition: all 0.5s ease-in;
   }
 
+  .heroContent {
+    animation: none;
+  }
+
   .divNav {
-    background-color: #00B2FF;
+    background-color: #eaf5ff;
   }
 
   .logoDiv {
-    background-color: aqua;
     height: 7rem;
     width: 14rem;
   }
   .logoDiv img {
-    width: 17rem;
+    width: 16rem;
   }
 
   .navLinks {
@@ -585,7 +592,7 @@ h1 {
     top: 9vh;
     right: 0px;
     min-height: 91vh;
-    background-color: antiquewhite;
+    background-color: #eaf5ff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -595,7 +602,10 @@ h1 {
     width: 50%;
     transform: translateX(100%);
     transition: all 1s ease;
-    z-index: -4;
+    z-index: 2;
+  }
+  .navLinks li::after {
+    display: none;
   }
 
   .activeNavLinks {
@@ -631,27 +641,39 @@ h1 {
     display: none;
   }
 
+  .hero {
+    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+  }
+
   .heroContent {
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: center;
   }
 
   .divTextContent {
-    background-color: #00B2FF;
-    padding: 10rem 3rem;
+    background-color: white;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 8rem 3rem;
     height: auto;
     display: flex;
-    gap: 5rem;
+    gap: 7rem;
     text-align: center;
+    animation: load3 1.5s ease;
+    box-shadow: 0rem 2rem 2rem 0rem rgba(0, 0, 0, 0.1), 0rem 3rem 4rem 0rem rgba(0, 0, 0, 0.1);
   }
   .divTextContent .heroText {
-    color: white;
-    font-size: 5.8rem;
+    color: #27394e;
+    font-size: 5.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    font-stretch: expanded;
+    text-align: center;
   }
   .divTextContent h1 {
-    color: white;
-    font-size: 2.7rem;
+    color: #27394e;
+    font-size: 3rem;
     font-weight: 600;
   }
 
@@ -662,14 +684,25 @@ h1 {
   }
 
   .btnHero2 {
-    height: 8rem;
+    height: 10rem;
     width: 100%;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    border: 1rem solid white;
+    color: white;
+    animation: load4 1.5s ease-in;
   }
 
   .diviPaginaWeb {
     display: flex;
     flex-direction: column;
-    background-color: #00B2FF;
+  }
+
+  .serviciosContent {
+    width: 90%;
+    margin: auto;
   }
 
   .serviciosContentContent {
@@ -680,15 +713,22 @@ h1 {
   }
 
   .serviciosContentItem {
-    width: 55rem;
+    width: 100%;
   }
 
   .proyectosContent {
+    width: 80%;
+    gap: 7rem;
     grid-template-columns: repeat(1, 1fr);
   }
 
   .divWaves {
     margin-top: 13rem;
+  }
+
+  .divForm,
+.form1 {
+    padding: 0rem;
   }
 
   .divFooterContent {
@@ -697,6 +737,26 @@ h1 {
 
   .divMapSite {
     display: none;
+  }
+}
+@keyframes load3 {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes load4 {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 @keyframes load2 {

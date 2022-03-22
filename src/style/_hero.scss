@@ -1,161 +1,139 @@
 // NAVBAR
 
 .divNav {
-    min-height: 15vh;
-    width: 92%;
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 auto;
-
-
+  min-height: 15vh;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
 }
 
 .logoDiv {
-    display: flex;
-    justify-content: center;
-    width: 15rem;
+  display: flex;
+  justify-content: center;
+  width: 15rem;
 
-    img {
-        width: 15rem;
-    }
+  img {
+    width: 15rem;
+  }
 }
 
 .navLinks {
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
 
-    width: 70%;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-evenly;
+  li {
+    &::after {
+      content: "";
+      display: block;
+      width: auto;
+      background-color: white;
+      height: 0.5rem;
 
-
-
-    li {
-
-        &::after {
-            content: '';
-            display: block;
-            width: auto;
-            background-color: white;
-            height: 0.5rem;
-
-            margin: 0px;
-            padding: 0px;
-            transition: all 0.3s ease;
-        }
-
-        &:hover::after {
-            // height: 0.5rem;
-            background-color: black;
-        }
-
-
-        a {
-            font-family: "menu-regular";
-            font-size: 3.5rem;
-            font-weight: 50;
-        }
+      margin: 0px;
+      padding: 0px;
+      transition: all 0.3s ease;
     }
 
-}
+    &:hover::after {
+      background-color: black;
+    }
 
+    a {
+      font-family: "menu-regular";
+      font-size: 3.5rem;
+      font-weight: 50;
+    }
+  }
+}
 
 // HERO SECTION
 .hero {
-    min-height: 85vh;
-
+  min-height: 85vh;
 }
-
 
 .imgVectorDiv {
-
-    img {
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        object-fit: cover;
-    }
+  img {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    object-fit: cover;
+  }
 }
-
 
 .imgDevGuyDiv {
-    width: 50rem;
+  width: 50rem;
 
-    img {
-        width: 50%;
-        position: absolute;
-        top: 25%;
-        right: 0px;
-    }
+  img {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    right: 0px;
+  }
 }
 
-
 .heroContent {
-    height: 85vh;
-    width: 91.7%;
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    animation: load2 2s ease-in-out;
-
+  height: 85vh;
+  width: 91.7%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  animation: load2 2s ease-in-out;
 }
 
 .divTextContent {
-
-    display: flex;
-    flex-direction: column;
-    margin-top: 10rem;
-
-
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
 }
 
 .heroText {
-    font-family: "text-hero";
-    font-size: 6.7rem;
-    letter-spacing: 0.5rem;
-
+  font-family: "text-hero";
+  font-size: 6.7rem;
+  letter-spacing: 0.5rem;
 }
 
 h1 {
-    margin-top: 2rem;
-    font-family: "text-content";
-    font-weight: 500;
-    font-size: 2.5rem;
+  margin-top: 2rem;
+  font-family: "text-content";
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .divBurger {
-    display: none;
+  display: none;
 }
 
 .divBtn {
-    width: 100%;
-    background-color: #4FE2F6;
+  width: 100%;
+  background-color: #4fe2f6;
 }
 
 .btnHero2 {
-    // background: #F1727A;
-    border: solid;
-    // border-radius: 1rem;
-    background-color: white;
-    width: 30rem;
-    height: 5.8rem;
-    padding: 2rem 0rem;
-    color: black;
-    cursor: pointer;
-    margin-top: 5rem;
-    transition: all 0.3s ease-in, background-image 0.2s ease;
-    font-size: 2.3rem;
-    font-weight: 900;
-    text-align: center;
-    padding: 1.5rem 0rem;
-    border-image-slice: 1;
-    border-width: 0.5rem;
-    border-image-source: linear-gradient(to left, #4FE2F6, #F05FF3);
+  border: solid;
+  background-color: white;
+  width: 30rem;
+  height: auto;
+  padding: 2rem 0rem;
+  color: black;
+  cursor: pointer;
+  margin-top: 5rem;
+  transition: color 0.3s ease-in, background-image 0.2s ease;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding: 1.5rem 0rem;
+  border-image-slice: 1;
+  border-width: 0.5rem;
+  border-image-source: linear-gradient(to left, #4fe2f6, #f05ff3);
 
-
-    &:hover {
-        background-image: linear-gradient(to left, #4FE2F6, #F05FF3);
-        color: white;
-    }
+  &:hover {
+    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    color: white;
+  }
 }
