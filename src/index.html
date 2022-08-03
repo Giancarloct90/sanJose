@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
   <link rel="icon" href="./asset/img/logo23.svg">
   <title>G-Dev</title>
@@ -17,6 +18,8 @@
 
   <meta name="robots" content="index,follow" />
   <link rel="stylesheet" href="./style/style.css" />
+
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
   <!-- NAVBAR -->
   <section class="header2">
     <nav class="divNav">
-      <div class="logoDiv">
+      <div class="logoDiv" id="logoID">
         <img src="./asset/img/Logo4.svg" alt="" id="logo">
       </div>
 
@@ -48,9 +51,12 @@
     <div class="heroContent">
       <div class="divTextContent">
         <h2 class="heroText">¿Necesitas una </br> Pagina Web?</h2>
-        <h1>Nosotros hacemos Páginas Web responsivas y
-          profesionales,
-          <br> ponemos tu negocio o empresa en el internet.</h1>
+        <div class="textBox">
+          <h2>
+            Nosotros hacemos Páginas Web responsivas <br> y
+            profesionales, ponemos tu negocio o empresa <br> en el internet.
+          </h2>
+        </div>
 
       </div>
       <div class="divBtnHero">
@@ -95,7 +101,7 @@
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
-            <h3>Diseño responsivo para dispositivos móviles.</h3>
+            <h3>Diseño responsivo.</h3>
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
@@ -103,7 +109,7 @@
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
-            <h3>Correo Institucional (Costo adicional).</h3>
+            <h3>Correo Institucional.</h3>
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
@@ -131,7 +137,7 @@
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
-            <h3>Diseño responsivo para dispositivos móviles.</h3>
+            <h3>Diseño responsivo.</h3>
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
@@ -170,7 +176,7 @@
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
-            <h3>Configuración y mantenimiento de pagina web</h3>
+            <h3>Mantenimiento de pagina web</h3>
           </div>
           <div class="serviciosContentItem">
             <img src="./asset/img/check.svg" alt="">
@@ -196,12 +202,20 @@
   <!-- PROYECTOS SECTION  -->
   <section class="proyectos" id="proyectos">
 
-    <div class="divProyectos">
-      <div class="proyectosTitulo">
-        <h2>PROYECTOS</h2>
-      </div>
-      <div class="proyectosContent">
-        <div class="project">
+    <div class="proyectosTitulo">
+      <h2>PROYECTOS</h2>
+    </div>
+
+    <button class="carousel-button-left carousel-btns">
+      <img src="asset/img/left.svg" alt="">
+    </button>
+    
+    
+    <div class="proyectosContent">
+
+      <ul class="carousel-track">
+      
+        <div class="project current-slide">
           <div class="divImgProject">
             <img loading="lazy" src="./asset/img/covid.png" alt="">
           </div>
@@ -266,8 +280,20 @@
             <a href="https://travellysite2.netlify.app/" target="_blank" class="btnProject">VER PAGINA</a>
           </div>
         </div>
+      </ul>
+    </div>
+    
+    <button class="carousel-button-right carousel-btns">
+      <img src="asset/img/right.svg" alt="">
+    </button>
 
-      </div>
+    <div class="carousel-nav">
+      <button class="carousel-indicator current-slide"> </button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
     </div>
 
   </section>
@@ -328,5 +354,12 @@
   </section>
 
 </body>
+
+<script>
+  const logoID = document.getElementById("logoID");
+  logoID.addEventListener("click", () => {
+    console.log("hello");
+  });
+</script>
 
 </html>

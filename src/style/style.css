@@ -20,10 +20,12 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -61,48 +63,6 @@ li {
   list-style: none;
 }
 
-.divNav {
-  min-height: 15vh;
-  width: 92%;
-  display: flex;
-  align-items: center;
-  margin: 0 0 0 auto;
-}
-
-.logoDiv {
-  display: flex;
-  justify-content: center;
-  width: 15rem;
-}
-.logoDiv img {
-  width: 15rem;
-}
-
-.navLinks {
-  width: 70%;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-evenly;
-}
-.navLinks li::after {
-  content: "";
-  display: block;
-  width: auto;
-  background-color: white;
-  height: 0.5rem;
-  margin: 0px;
-  padding: 0px;
-  transition: all 0.3s ease;
-}
-.navLinks li:hover::after {
-  background-color: black;
-}
-.navLinks li a {
-  font-family: "menu-regular";
-  font-size: 3.5rem;
-  font-weight: 50;
-}
-
 .hero {
   min-height: 85vh;
 }
@@ -113,11 +73,9 @@ li {
   top: 0px;
   right: 0px;
   object-fit: cover;
+  z-index: -1;
 }
 
-.imgDevGuyDiv {
-  width: 50rem;
-}
 .imgDevGuyDiv img {
   width: 50%;
   position: absolute;
@@ -171,7 +129,6 @@ h1 {
   padding: 2rem 0rem;
   color: black;
   cursor: pointer;
-  margin-top: 5rem;
   transition: color 0.3s ease-in, background-image 0.2s ease;
   font-size: 2.3rem;
   font-weight: 900;
@@ -185,6 +142,12 @@ h1 {
 .btnHero2:hover {
   background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
   color: white;
+}
+
+.textBox h2 {
+  margin: 2rem 0rem;
+  color: black;
+  font-size: 2.7rem;
 }
 
 .servicios {
@@ -319,7 +282,7 @@ h1 {
 }
 
 .proyectos {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   position: relative;
   width: 100%;
   margin: auto;
@@ -338,7 +301,7 @@ h1 {
   color: white;
 }
 
-.proyectosContent {
+.carousel-track {
   width: 90%;
   margin: auto;
   display: grid;
@@ -348,7 +311,6 @@ h1 {
 }
 
 .project {
-  width: 100%;
   height: auto;
   padding-bottom: 2.5rem;
   background-color: white;
@@ -384,7 +346,7 @@ h1 {
 .btnProject {
   margin-top: 3rem;
   border: none;
-  background-color: #258D8A;
+  background-color: #258d8a;
   color: white;
   border-radius: 0.9rem;
   padding: 0.5rem 1rem;
@@ -540,21 +502,52 @@ h1 {
   width: 100%;
 }
 
+.divNav {
+  min-height: 15vh;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  cursor: pointer;
+}
+.logoDiv img {
+  width: 15rem;
+}
+
+.navLinks {
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.classLi::after {
+  content: "";
+  display: block;
+  width: auto;
+  background-color: white;
+  height: 0.5rem;
+  margin: 0px;
+  padding: 0px;
+  transition: all 0.3s ease;
+}
+.classLi:hover::after {
+  background-color: black;
+}
+.classLi a {
+  font-family: "menu-regular";
+  font-size: 3.5rem;
+}
+
 @media screen and (max-width: 744px) {
   html {
     font-size: 42%;
-  }
-
-  .hero,
-.servicios,
-.proyectos,
-.footer {
-    position: relative;
-    z-index: 1;
-  }
-
-  .header2 {
-    z-index: 3;
   }
 
   .divBurger {
@@ -716,7 +709,7 @@ h1 {
     width: 100%;
   }
 
-  .proyectosContent {
+  .carousel-track {
     width: 80%;
     gap: 7rem;
     grid-template-columns: repeat(1, 1fr);
@@ -724,6 +717,79 @@ h1 {
 
   .divWaves {
     margin-top: 13rem;
+  }
+
+  .proyectosTitulo {
+    margin-bottom: 5rem;
+  }
+
+  .proyectos {
+    position: relative;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .proyectosContent {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    background-color: bisque;
+  }
+
+  .carousel-track {
+    padding: 0rem;
+    margin: 0rem;
+    transition: transform 0.7s ease-in;
+    display: flex;
+    gap: 0rem;
+    width: 100%;
+    background-color: bisque;
+  }
+
+  .project {
+    height: 50rem;
+    min-width: 100%;
+    transition: none !important;
+  }
+
+  .carousel-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0rem;
+    cursor: pointer;
+  }
+
+  .carousel-button-left {
+    left: 1rem;
+  }
+
+  .carousel-button-right {
+    right: 1rem;
+  }
+
+  .carousel-nav {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .carousel-indicator {
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .carousel-indicator.current-slide {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .divForm,

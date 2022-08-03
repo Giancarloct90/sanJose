@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 h1 {

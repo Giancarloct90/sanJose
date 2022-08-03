@@ -2,9 +2,7 @@ const serviciosContentContent = document.querySelectorAll(
   ".serviciosContentContent"
 );
 const proyectosContent = document.querySelector(".proyectosContent");
-// const contentPaginaWebPG = document.getElementById('contentPaginaWebPG');
 
-// console.log(contentPaginaWebPG);
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
@@ -12,8 +10,7 @@ const observer = new IntersectionObserver(
       if (!entry.isIntersecting) {
         return;
       }
-      console.log(entry.target.getAttribute("tipe"));
-      console.log(entry.target);
+
       switch (entry.target.getAttribute("tipe")) {
         case "pg":
           entry.target
@@ -58,7 +55,6 @@ const observerProject = new IntersectionObserver(
       if (!entry.isIntersecting) {
         return;
       }
-      console.log(entry.target);
       entry.target.classList.add("proyectosContentReveal");
       // entry.isIntersecting ? entry.target.classList.add('proyectosContentReveal') : console.log('nope');
     });
