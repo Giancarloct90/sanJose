@@ -1,0 +1,48 @@
+// ANIMATIONS
+@keyframes load2 {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+    // transform: ;
+    // display: inline-block;
+  }
+}
+
+@keyframes heroShake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes load3 {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes load4 {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

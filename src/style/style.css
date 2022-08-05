@@ -150,6 +150,66 @@ h1 {
   font-size: 2.7rem;
 }
 
+@media screen and (max-width: 744px) {
+  .imgVectorDiv,
+.imgDevGuyDiv {
+    display: none;
+  }
+
+  .hero {
+    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+  }
+
+  .heroContent {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .divTextContent {
+    background-color: white;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 8rem 3rem;
+    height: auto;
+    display: flex;
+    gap: 7rem;
+    text-align: center;
+    animation: load3 1.5s ease;
+    box-shadow: 0rem 2rem 2rem 0rem rgba(0, 0, 0, 0.1), 0rem 3rem 4rem 0rem rgba(0, 0, 0, 0.1);
+  }
+  .divTextContent .heroText {
+    color: #27394e;
+    font-size: 5.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    font-stretch: expanded;
+    text-align: center;
+  }
+  .divTextContent h1 {
+    color: #27394e;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .divBtnHero {
+    width: 100%;
+    text-align: center;
+    height: 20rem;
+  }
+
+  .btnHero2 {
+    height: 10rem;
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    border: 1rem solid white;
+    color: white;
+    animation: load4 1.5s ease-in;
+  }
+}
 .servicios {
   position: relative;
   height: max-content;
@@ -163,7 +223,7 @@ h1 {
   display: flex;
   place-content: center;
   padding: 3rem;
-  background: linear-gradient(80deg, #08B7FE, #4FE2F6);
+  background: linear-gradient(80deg, #08b7fe, #4fe2f6);
 }
 .serviciosTitulo h2 {
   color: white;
@@ -281,6 +341,28 @@ h1 {
   opacity: 1;
 }
 
+@media screen and (max-width: 744px) {
+  .diviPaginaWeb {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serviciosContent {
+    width: 90%;
+    margin: auto;
+  }
+
+  .serviciosContentContent {
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .serviciosContentItem {
+    width: 100%;
+  }
+}
 .proyectos {
   background-color: #00b2ff;
   position: relative;
@@ -289,10 +371,16 @@ h1 {
   padding-bottom: 10rem;
 }
 
+.carousel-nav,
+.carousel-btns {
+  display: none;
+}
+
 .proyectosTitulo {
   width: 100%;
   text-align: center;
   margin-bottom: 10rem;
+  animation: load2 2s ease-in-out;
 }
 .proyectosTitulo h2 {
   padding-top: 7rem;
@@ -307,7 +395,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
-  transition: all 0.7s ease-in;
 }
 
 .project {
@@ -315,7 +402,6 @@ h1 {
   padding-bottom: 2.5rem;
   background-color: white;
   border-radius: 1rem;
-  transition: all 0.4s ease-in-out;
 }
 .project:hover {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4), 0px 30px 30px rgba(0, 0, 0, 0.4);
@@ -357,14 +443,100 @@ h1 {
 
 .proyectosContent {
   opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.3s ease-in-out;
 }
 
 .proyectosContentReveal {
   opacity: 1;
+  transform: translateY(0%);
 }
 
+@media screen and (max-width: 744px) {
+  .carousel-track {
+    width: 80%;
+    gap: 7rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divWaves {
+    margin-top: 13rem;
+  }
+
+  .proyectosTitulo {
+    margin-bottom: 5rem;
+  }
+
+  .proyectos {
+    position: relative;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .proyectosContent {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    background-color: bisque;
+  }
+
+  .carousel-track {
+    padding: 0rem;
+    margin: 0rem;
+    transition: transform 0.7s ease-in;
+    display: flex;
+    gap: 0rem;
+    width: 100%;
+  }
+
+  .project {
+    height: 50rem;
+    min-width: 100%;
+  }
+
+  .carousel-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .carousel-button-left {
+    left: 1rem;
+  }
+
+  .carousel-button-right {
+    right: 1rem;
+  }
+
+  .carousel-nav {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .carousel-indicator {
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .carousel-indicator.current-slide {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
 .footer {
-  background-color: #27394E;
+  background-color: #27394e;
   height: auto;
   padding: 10rem 0rem;
 }
@@ -427,7 +599,7 @@ h1 {
 
 .btnForm {
   border: none;
-  background-color: #F1727A;
+  background-color: #f1727a;
   height: 4rem;
   color: white;
   transition: all 0.7s ease;
@@ -435,7 +607,7 @@ h1 {
 .btnForm:hover {
   cursor: pointer;
   background-color: white;
-  border: 0.4rem #F1727A solid;
+  border: 0.4rem #f1727a solid;
   color: black;
 }
 
@@ -502,6 +674,20 @@ h1 {
   width: 100%;
 }
 
+@media screen and (max-width: 744px) {
+  .divForm,
+.form1 {
+    padding: 0rem;
+  }
+
+  .divFooterContent {
+    gap: 15rem;
+  }
+
+  .divMapSite {
+    display: none;
+  }
+}
 .divNav {
   min-height: 15vh;
   width: 92%;
@@ -546,10 +732,6 @@ h1 {
 }
 
 @media screen and (max-width: 744px) {
-  html {
-    font-size: 42%;
-  }
-
   .divBurger {
     display: block;
   }
@@ -628,181 +810,28 @@ h1 {
   .toogle .burgerLine3 {
     transform: rotate(-45deg) translate(0.8rem, -0.6rem);
   }
-
-  .imgVectorDiv,
-.imgDevGuyDiv {
-    display: none;
+}
+@media screen and (max-width: 744px) {
+  html {
+    font-size: 42%;
   }
-
-  .hero {
-    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+}
+@keyframes load2 {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
   }
-
-  .heroContent {
-    width: 80%;
-    margin: auto;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
-
-  .divTextContent {
-    background-color: white;
-    width: 100%;
-    border-radius: 2rem;
-    padding: 8rem 3rem;
-    height: auto;
-    display: flex;
-    gap: 7rem;
-    text-align: center;
-    animation: load3 1.5s ease;
-    box-shadow: 0rem 2rem 2rem 0rem rgba(0, 0, 0, 0.1), 0rem 3rem 4rem 0rem rgba(0, 0, 0, 0.1);
+}
+@keyframes heroShake {
+  from {
+    transform: rotateZ(-5deg);
   }
-  .divTextContent .heroText {
-    color: #27394e;
-    font-size: 5.5rem;
-    letter-spacing: 0.5rem;
-    font-weight: bolder;
-    font-stretch: expanded;
-    text-align: center;
-  }
-  .divTextContent h1 {
-    color: #27394e;
-    font-size: 3rem;
-    font-weight: 600;
-  }
-
-  .divBtnHero {
-    width: 100%;
-    text-align: center;
-    height: 20rem;
-  }
-
-  .btnHero2 {
-    height: 10rem;
-    width: 100%;
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-    font-weight: bolder;
-    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
-    border: 1rem solid white;
-    color: white;
-    animation: load4 1.5s ease-in;
-  }
-
-  .diviPaginaWeb {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .serviciosContent {
-    width: 90%;
-    margin: auto;
-  }
-
-  .serviciosContentContent {
-    flex-wrap: wrap;
-    gap: 5rem;
-    width: 90%;
-    margin: auto;
-  }
-
-  .serviciosContentItem {
-    width: 100%;
-  }
-
-  .carousel-track {
-    width: 80%;
-    gap: 7rem;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .divWaves {
-    margin-top: 13rem;
-  }
-
-  .proyectosTitulo {
-    margin-bottom: 5rem;
-  }
-
-  .proyectos {
-    position: relative;
-    width: 100%;
-    padding-bottom: 3rem;
-  }
-
-  .proyectosContent {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-    background-color: bisque;
-  }
-
-  .carousel-track {
-    padding: 0rem;
-    margin: 0rem;
-    transition: transform 0.7s ease-in;
-    display: flex;
-    gap: 0rem;
-    width: 100%;
-    background-color: bisque;
-  }
-
-  .project {
-    height: 50rem;
-    min-width: 100%;
-    transition: none !important;
-  }
-
-  .carousel-btns {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0rem;
-    cursor: pointer;
-  }
-
-  .carousel-button-left {
-    left: 1rem;
-  }
-
-  .carousel-button-right {
-    right: 1rem;
-  }
-
-  .carousel-nav {
-    display: flex;
-    height: 3rem;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .carousel-indicator {
-    border-radius: 50%;
-    border: none;
-    width: 2rem;
-    height: 2rem;
-    margin: 0rem 1rem;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .carousel-indicator.current-slide {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .divForm,
-.form1 {
-    padding: 0rem;
-  }
-
-  .divFooterContent {
-    gap: 15rem;
-  }
-
-  .divMapSite {
-    display: none;
+  to {
+    transform: rotateZ(5deg);
   }
 }
 @keyframes load3 {
@@ -823,24 +852,6 @@ h1 {
   to {
     opacity: 1;
     transform: translateY(0%);
-  }
-}
-@keyframes load2 {
-  from {
-    opacity: 0;
-    transform: translateY(6%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes heroShake {
-  from {
-    transform: rotateZ(-5deg);
-  }
-  to {
-    transform: rotateZ(5deg);
   }
 }
 

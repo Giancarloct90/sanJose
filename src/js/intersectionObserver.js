@@ -61,7 +61,7 @@ const observerProject = new IntersectionObserver(
   },
   {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "-150px",
     threshold: 0,
   }
 );

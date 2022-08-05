@@ -1,151 +1,165 @@
 .footer {
-    background-color: #27394E;
-    height: auto;
-    padding: 10rem 0rem;
+  background-color: #27394e;
+  height: auto;
+  padding: 10rem 0rem;
 }
 
 .divFooterContent {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 0rem;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0rem;
 }
 
 .divForm {
-    border-radius: 1rem;
-    height: 40rem;
-    width: 45rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    color: white;
-    padding: 0rem 3rem;
+  border-radius: 1rem;
+  height: 40rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: white;
+  padding: 0rem 3rem;
 }
 
 .form1 {
-    border-radius: 1rem;
-    height: 40rem;
-    width: 45rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    color: white;
-    padding: 0rem 3rem;
+  border-radius: 1rem;
+  height: 40rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: white;
+  padding: 0rem 3rem;
 }
 
 .divTitleForm {
-    h2 {
-        font-size: 3rem;
+  h2 {
+    font-size: 3rem;
+  }
 
-    }
-
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .divNombre,
 .divNumero,
 .divMesaje {
-    input {
-        padding: 0rem 1rem;
-    }
+  input {
+    padding: 0rem 1rem;
+  }
 
-    label {
-        font-size: 2.5rem;
-    }
+  label {
+    font-size: 2.5rem;
+  }
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .btnForm {
-    border: none;
-    background-color: #F1727A;
-    height: 4rem;
-    color: white;
-    transition: all 0.7s ease;
+  border: none;
+  background-color: #f1727a;
+  height: 4rem;
+  color: white;
+  transition: all 0.7s ease;
 
-    &:hover {
-        cursor: pointer;
-        background-color: white;
-        border: 0.4rem #F1727A solid;
-        color: black;
-    }
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 0.4rem #f1727a solid;
+    color: black;
+  }
 }
 
 .divMapSite {
-    border-radius: 1rem;
-    height: 40rem;
-    width: 33rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  border-radius: 1rem;
+  height: 40rem;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-    li {
-        a {
-            color: white;
-
-        }
+  li {
+    a {
+      color: white;
     }
+  }
 }
 
 .divLogoSocialNetwork {
-    border-radius: 1rem;
-    height: 40rem;
-    width: 45rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 3rem;
+  border-radius: 1rem;
+  height: 40rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
 }
 
 .divImgLogoFooter {
-    img {
-        width: 20rem;
-    }
+  img {
+    width: 20rem;
+  }
 }
 
 .divEmailFooter {
+  li {
+    margin: 2rem 0rem;
+    display: flex;
+    gap: 2rem;
 
-    li {
-        margin: 2rem 0rem;
-        display: flex;
-        gap: 2rem;
-
-        img {
-            width: 2.6rem;
-            height: 3rem;
-        }
-
-        color: white;
-        font-weight: 900;
+    img {
+      width: 2.6rem;
+      height: 3rem;
     }
+
+    color: white;
+    font-weight: 900;
+  }
 }
 
 .divSocialNetworkFooter {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    img {
-        width: 4rem;
-    }
+  img {
+    width: 4rem;
+  }
 }
 
 .border::after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    width: 0px;
-    transition: all 0.5s ease-in;
-    background: white;
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  transition: all 0.5s ease-in;
+  background: white;
 }
 
 .border:hover::after {
-    width: 100%;
+  width: 100%;
+}
+
+//****************************************************//
+// MEDIA QUERY
+@media screen and (max-width: 744px) {
+  .divForm,
+  .form1 {
+    padding: 0rem;
+  }
+
+  .divFooterContent {
+    gap: 15rem;
+  }
+
+  .divMapSite {
+    display: none;
+  }
 }
