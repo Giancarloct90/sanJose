@@ -32,18 +32,22 @@
   flex-direction: column;
   gap: 5rem;
   animation: load2 2s ease-in-out;
+  padding: 5rem 0rem;
 }
 
 .divTextContent {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  // margin-top: 6.5rem;
+  // background-color: #004e92;
+  gap: 4.5rem;
 }
 
 .heroText {
-  font-family: "text-hero";
+  font-family: "text-hero2";
   font-size: 6.7rem;
   letter-spacing: 0.5rem;
+  text-align: justify;
 }
 
 h1 {
@@ -67,11 +71,10 @@ h1 {
   background-color: white;
   width: 30rem;
   height: auto;
-  padding: 2rem 0rem;
   color: black;
   cursor: pointer;
   // margin-top: 0rem;
-  transition: color 0.3s ease-in, background-image 0.2s ease;
+  transition: all 0.4s ease-in, background-image 0.2s ease;
   font-size: 2.3rem;
   font-weight: 900;
   letter-spacing: 0.2rem;
@@ -79,18 +82,22 @@ h1 {
   padding: 1.5rem 0rem;
   border-image-slice: 1;
   border-width: 0.5rem;
-  border-image-source: linear-gradient(to left, #4fe2f6, #f05ff3);
+  border-image-source: linear-gradient(
+    to right,
+    #000428,
+    #004e92
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   &:hover {
-    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    background-image: linear-gradient(to right, #000428, #004e92);
     color: white;
   }
 }
 
 .textBox {
-  // background-color: black;
+  width: 40%;
   h2 {
-    margin: 2rem 0rem;
+    text-align: justify;
     color: black;
     font-size: 2.7rem;
   }
@@ -105,23 +112,45 @@ h1 {
   }
 
   .hero {
-    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    // background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    // background: $backgroundHero; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../asset/img/backgr.png");
+    // background-color: #004e92;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    // min-height: 100vh;
+    padding-top: 0rem;
+    // padding-bottom: 8rem;
+    // background-color: white;
+  }
+
+  .textBox {
+    width: 100%;
+    h2 {
+      text-align: justify;
+      color: black;
+      font-size: 3rem;
+    }
   }
 
   .heroContent {
-    width: 80%;
+    width: 85%;
     margin: auto;
     text-align: center;
+    padding: 3rem 0rem;
   }
 
   .divTextContent {
-    background-color: white;
+    // background-color: white;
     width: 100%;
     border-radius: 2rem;
-    padding: 8rem 3rem;
+    padding: 6rem 2rem;
     height: auto;
+    // margin-top: 3rem;
     display: flex;
-    gap: 7rem;
+    gap: 12rem;
     text-align: center;
     animation: load3 1.5s ease;
     box-shadow: 0rem 2rem 2rem 0rem rgba(0, 0, 0, 0.1),
@@ -129,17 +158,12 @@ h1 {
 
     .heroText {
       color: #27394e;
-      font-size: 5.5rem;
-      letter-spacing: 0.5rem;
+      text-align: justify;
+      font-size: 5rem;
+      // letter-spacing: rem;
       font-weight: bolder;
       font-stretch: expanded;
       text-align: center;
-    }
-
-    h1 {
-      color: #27394e;
-      font-size: 3rem;
-      font-weight: 600;
     }
   }
 
@@ -147,17 +171,24 @@ h1 {
     width: 100%;
     text-align: center;
     height: 20rem;
+    height: auto;
   }
 
   .btnHero2 {
+    border: none;
+    border-radius: 1.5rem;
     height: 10rem;
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.7rem;
     letter-spacing: 0.5rem;
     font-weight: bolder;
-    background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
-    border: 1rem solid white;
+    // background-image: linear-gradient(to left, #4fe2f6, #f05ff3);
+    // background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    background: linear-gradient(to right, #000428, #004e92);
+    // border: 1rem solid white;
     color: white;
     animation: load4 1.5s ease-in;
+    // border-image-source: linear-gradient(to right, #000428, #004e92);
+    // border-radius:;
   }
 }
