@@ -1,0 +1,11 @@
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  html {
+    font-size: 38%;
+    // overflow: hidden;
+  }
+}
+
+@import "bpt_navbar";
+@import "bpt_hero";
+@import "bpt_servicios";
+@import "bpt_footer";

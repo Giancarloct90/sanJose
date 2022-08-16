@@ -1,0 +1,10 @@
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 35%;
+  }
+}
+@import "bpm_footer";
+@import "bpm_hero";
+@import "bpm_navbar";
+@import "bpm_project";
+@import "bpm_services";

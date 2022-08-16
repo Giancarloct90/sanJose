@@ -1,0 +1,105 @@
+// HERO SECTION
+.hero {
+  min-height: 85vh;
+  // display: none;
+}
+
+.imgVectorDiv {
+  img {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.imgDevGuyDiv {
+  img {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    right: 0px;
+  }
+}
+
+.heroContent {
+  height: 85vh;
+  width: 91.7%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  animation: load2 2s ease-in-out;
+  padding: 5rem 0rem;
+}
+
+.divTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.heroText {
+  font-family: "text-hero2";
+  font-size: 6.7rem;
+  letter-spacing: 0.5rem;
+  text-align: justify;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-family: "text-content";
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.divBurger {
+  display: none;
+}
+
+.divBtn {
+  width: 100%;
+  background-color: #4fe2f6;
+}
+
+.btnHero2 {
+  border: solid;
+  background-color: white;
+  width: 30rem;
+  height: auto;
+  color: black;
+  cursor: pointer;
+  // margin-top: 0rem;
+  transition: all 0.4s ease-in, background-image 0.2s ease;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding: 1.5rem 0rem;
+  border-image-slice: 1;
+  border-width: 0.5rem;
+  border-image-source: linear-gradient(
+    to right,
+    #000428,
+    #004e92
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &:hover {
+    background-image: linear-gradient(to right, #000428, #004e92);
+    color: white;
+  }
+}
+
+.textBox {
+  width: 40%;
+  h2 {
+    text-align: justify;
+    color: black;
+    font-size: 2.7rem;
+  }
+}
+
+// *************************************************************************************//
+// MEDIA QUERY

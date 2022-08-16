@@ -1,0 +1,91 @@
+@media only screen and (max-width: 480px) {
+  .carousel-track {
+    width: 80%;
+    gap: 7rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divWaves {
+    margin-top: 13rem;
+  }
+
+  // CAROUSEL SECTION
+  .proyectosTitulo {
+    margin-bottom: 5rem;
+  }
+
+  .proyectos {
+    position: relative;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .proyectosContent {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    // background-color: bisque;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .proyectosContentReveal {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .carousel-track {
+    padding: 0rem;
+    margin: 0rem;
+    transition: transform 0.7s ease-in;
+    display: flex;
+    gap: 0rem;
+    width: 100%;
+  }
+
+  .project {
+    height: 50rem;
+    min-width: 100%;
+  }
+
+  .carousel-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .carousel-button-left {
+    left: 1rem;
+  }
+
+  .carousel-button-right {
+    right: 1rem;
+  }
+
+  .carousel-nav {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .carousel-indicator {
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .carousel-indicator.current-slide {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}

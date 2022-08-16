@@ -135,28 +135,3 @@
   transform: translateX(0%);
   opacity: 1;
 }
-
-//*******************************************************************//
-// MEDIA QUERY
-@media screen and (max-width: 744px) {
-  .diviPaginaWeb {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .serviciosContent {
-    width: 90%;
-    margin: auto;
-  }
-
-  .serviciosContentContent {
-    flex-wrap: wrap;
-    gap: 5rem;
-    width: 90%;
-    margin: auto;
-  }
-
-  .serviciosContentItem {
-    width: 100%;
-  }
-}

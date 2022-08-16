@@ -1,10 +1,13 @@
 @import "variables";
 @import "fonts";
+// @use "fonts";
 @import "global";
 @import "_hero.scss";
 @import "servicios";
 @import "proyectos";
 @import "footer";
-@import "navbar";
-@import "breakpoints/breakPoints";
+@import "navbar.scss";
 @import "animations";
+// breakpoint
+@import "./breakpoints/mobile/mobile";
+@import "./breakpoints/tablet/tablet";

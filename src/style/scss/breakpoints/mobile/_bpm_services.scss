@@ -1,0 +1,22 @@
+@media only screen and (max-width: 480px) {
+  .diviPaginaWeb {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serviciosContent {
+    width: 90%;
+    margin: auto;
+  }
+
+  .serviciosContentContent {
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .serviciosContentItem {
+    width: 100%;
+  }
+}
